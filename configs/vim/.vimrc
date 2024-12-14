@@ -114,6 +114,7 @@ map <C-l> <C-W>l
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " No annoying sound on errors
+set belloff=all
 set noerrorbells
 set novisualbell
 set t_vb=
