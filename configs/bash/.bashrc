@@ -7,6 +7,11 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+export PATH="$HOME/.local/bin:$PATH"
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+# temporary, cuda doesn't support higher g++ versions yet
+export NVCC_PREPEND_FLAGS="-ccbin /usr/bin/g++-13"
+
 # vim style
 # To see bindings, run "bind -P"
 set -o vi

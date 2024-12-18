@@ -46,6 +46,9 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
+" Show number of matches
+set shortmess-=S
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
