@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # warn user that this will overwrite all existing configs
-echo -e "\e[31mWarning - This will overwrite existing configuration files \e[0m"
+echo -e "\e[31mWarning - This will overwrite local configuration files \e[0m"
 read -p "Do you want to continue? "
 echo
 if ! [[ $REPLY =~ ^[Yy]$ ]]

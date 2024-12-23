@@ -12,6 +12,10 @@ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 # temporary, cuda doesn't support higher g++ versions yet
 export NVCC_PREPEND_FLAGS="-ccbin /usr/bin/g++-13"
 
+# change default editors (usefull for editing cronjobs with "crontab -e")
+export VISUAL=vim
+export EDITOR=vim
+
 # vim style
 # To see bindings, run "bind -P"
 set -o vi
@@ -31,7 +35,7 @@ if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
 
 # Expand the history size
 export HISTFILESIZE=10000
-export HISTSIZE=500
+export HISTSIZE=1000
 
 # Don't put duplicate lines in the history and do not add lines that start with a space
 export HISTCONTROL=erasedups:ignoredups:ignorespace
